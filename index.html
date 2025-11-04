@@ -1,222 +1,182 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>渠道报表管理 - 产品原型</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="page">
-      <aside class="sidebar">
-        <div class="logo">
-          <div class="logo-icon">数</div>
-          <div>
-            <div class="logo-title">主数据服务平台</div>
-            <div class="logo-subtitle">MASTER DATA</div>
-          </div>
-        </div>
-        <nav class="menu">
-          <div class="menu-group">
-            <div class="menu-group-title">总览</div>
-            <a href="#" class="menu-item active">
-              <span class="dot"></span>
-              渠道报表
-            </a>
-            <a href="#" class="menu-item">
-              <span class="dot"></span>
-              渠道资源
-            </a>
-            <a href="#" class="menu-item">
-              <span class="dot"></span>
-              渠道配置
-            </a>
-          </div>
-          <div class="menu-group">
-            <div class="menu-group-title">其他模块</div>
-            <a href="#" class="menu-item">
-              <span class="dot"></span>
-              数据源管理
-            </a>
-            <a href="#" class="menu-item">
-              <span class="dot"></span>
-              任务调度
-            </a>
-            <a href="#" class="menu-item">
-              <span class="dot"></span>
-              系统配置
-            </a>
-          </div>
-        </nav>
-      </aside>
-      <main class="content">
-        <header class="content-header">
-          <div>
-            <h1 class="page-title">渠道报表管理</h1>
-            <p class="page-desc">可以在这里查看所有渠道报表，维护报表状态以及查看数据。</p>
-          </div>
-          <button class="primary-btn">+ 创建报表</button>
-        </header>
-
-        <section class="card">
-          <div class="card-header">
-            <h2 class="card-title">报表列表</h2>
-            <div class="card-actions">
-              <input type="text" class="search" placeholder="搜索报表" />
-              <button class="secondary-btn">筛选</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知识管理 - 资料整理</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧导航栏 -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>知日方营销平台</h2>
             </div>
-          </div>
-          <table class="table">
-            <thead>
-              <tr>
-                <th>报表名称</th>
-                <th>状态</th>
-                <th>数据量</th>
-                <th>操作</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span class="title">手机渠道数据报表</span>
-                  <span class="tag">每日</span>
-                </td>
-                <td><span class="status status-online">在线</span></td>
-                <td>37</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">平安保险渠道数据-城市级别</span>
-                  <span class="tag">实时</span>
-                </td>
-                <td><span class="status status-online">在线</span></td>
-                <td>29</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">国寿渠道数据报表</span>
-                  <span class="tag">周报</span>
-                </td>
-                <td><span class="status status-maintain">维护</span></td>
-                <td>24</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">在线中介渠道数据（沪深）</span>
-                  <span class="tag">月度</span>
-                </td>
-                <td><span class="status status-online">在线</span></td>
-                <td>18</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">飞行保险渠道数据报表</span>
-                  <span class="tag">实时</span>
-                </td>
-                <td><span class="status status-offline">暂停</span></td>
-                <td>12</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">下沉渠道报表</span>
-                  <span class="tag">每日</span>
-                </td>
-                <td><span class="status status-online">在线</span></td>
-                <td>9</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">下沉渠道报表-地区差异</span>
-                  <span class="tag">实时</span>
-                </td>
-                <td><span class="status status-maintain">维护</span></td>
-                <td>6</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">下沉渠道报表-运营分析</span>
-                  <span class="tag">月度</span>
-                </td>
-                <td><span class="status status-online">在线</span></td>
-                <td>5</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">渠道成本数据报表</span>
-                  <span class="tag">季度</span>
-                </td>
-                <td><span class="status status-maintain">维护</span></td>
-                <td>3</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <span class="title">渠道拉新效率报表</span>
-                  <span class="tag">实时</span>
-                </td>
-                <td><span class="status status-offline">暂停</span></td>
-                <td>1</td>
-                <td class="actions">
-                  <button class="link">查看</button>
-                  <button class="link">编辑</button>
-                </td>
-              </tr>
-            </tbody>
-          </table>
+            
+            <nav class="nav-menu">
+                <div class="nav-item">
+                    <span class="nav-icon">🏠</span>
+                    <span>首页</span>
+                </div>
+                
+                <div class="nav-section">
+                    <div class="nav-section-title">内容管理</div>
+                    <div class="nav-item active">
+                        <span class="nav-icon">📚</span>
+                        <span>知识文库管理</span>
+                    </div>
+                    <div class="nav-item">
+                        <span class="nav-icon">📖</span>
+                        <span>课程管理</span>
+                    </div>
+                </div>
+            </nav>
+        </aside>
 
-          <div class="pagination">
-            <span class="pagination-info">共 128 条数据</span>
-            <div class="pagination-controls">
-              <button class="page-btn" disabled>上一页</button>
-              <button class="page-btn active">1</button>
-              <button class="page-btn">2</button>
-              <button class="page-btn">3</button>
-              <span class="ellipsis">...</span>
-              <button class="page-btn">12</button>
-              <button class="page-btn">下一页</button>
+        <!-- 主内容区域 -->
+        <main class="main-content">
+            <!-- 页面头部 -->
+            <header class="page-header">
+                <div class="header-info">
+                    <h1>资料整理</h1>
+                    <p class="subtitle">查看和管理这个目录的知识点，主流课程和知识</p>
+                </div>
+                <button class="btn-primary" id="uploadBtn">
+                    <span>+</span> 上传新文档
+                </button>
+            </header>
+
+            <!-- 搜索栏 -->
+            <div class="search-bar">
+                <input type="text" placeholder="搜索文档名称..." id="searchInput">
+                <span class="search-icon">🔍</span>
             </div>
-          </div>
-        </section>
-      </main>
+
+            <!-- 文档列表 -->
+            <div class="document-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>文档名称</th>
+                            <th>状态</th>
+                            <th>知识点数</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="documentTable">
+                        <!-- 文档行将通过 JavaScript 动态生成 -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 分页控件 -->
+            <div class="pagination">
+                <div class="pagination-info">
+                    共 <span id="totalCount">11</span> 条，每页 <span id="pageSize">10</span> 条
+                </div>
+                <div class="pagination-controls">
+                    <button class="page-btn" id="prevPage">&lt;</button>
+                    <button class="page-btn active" data-page="1">1</button>
+                    <button class="page-btn" data-page="2">2</button>
+                    <button class="page-btn" id="nextPage">&gt;</button>
+                    <span class="jump-to">跳至</span>
+                    <input type="number" class="page-input" id="pageInput" min="1" max="2">
+                    <span>页</span>
+                </div>
+            </div>
+        </main>
     </div>
-  </body>
+
+    <script>
+        // 文档数据
+        const documents = [
+            { id: 1, name: '关于 AI 和记忆系统.pdf', status: 100, knowledgePoints: 27 },
+            { id: 2, name: '客户跟踪清单', status: 100, knowledgePoints: 18 },
+            { id: 3, name: '如何零产品营销技能-for销售新人培训', status: 100, knowledgePoints: 24 },
+            { id: 4, name: '5分钟介绍新零售for销售新人培训', status: 100, knowledgePoints: 9 },
+            { id: 5, name: '5分钟介绍新零售for销售新人培训', status: 100, knowledgePoints: 9 },
+            { id: 6, name: '了解有预缴的业务-2024年5月版【四字幕】', status: 100, knowledgePoints: 1 },
+            { id: 7, name: '了解有预缴的业务-2024年5月版【四字幕】', status: 100, knowledgePoints: null },
+            { id: 8, name: '了解有预缴的业务-2024年5月版【四字幕】', status: 100, knowledgePoints: null },
+            { id: 9, name: '了解有预缴的业务-2024年5月版【四字幕】', status: 100, knowledgePoints: null },
+            { id: 10, name: '5分钟介绍新零售for销售新人培训', status: 100, knowledgePoints: null }
+        ];
+
+        // 渲染文档列表
+        function renderDocuments(docs) {
+            const tbody = document.getElementById('documentTable');
+            tbody.innerHTML = '';
+
+            docs.forEach(doc => {
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="doc-name">${doc.name}</td>
+                    <td>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: ${doc.status}%"></div>
+                        </div>
+                    </td>
+                    <td class="text-center">${doc.knowledgePoints !== null ? doc.knowledgePoints : '-'}</td>
+                    <td class="actions">
+                        <button class="btn-link btn-view">查看</button>
+                        <button class="btn-link btn-delete">删除</button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            // 添加操作按钮事件
+            document.querySelectorAll('.btn-view').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    alert('查看文档功能');
+                });
+            });
+
+            document.querySelectorAll('.btn-delete').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    if (confirm('确定要删除这个文档吗？')) {
+                        alert('删除文档功能');
+                    }
+                });
+            });
+        }
+
+        // 搜索功能
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = documents.filter(doc => 
+                doc.name.toLowerCase().includes(searchTerm)
+            );
+            renderDocuments(filtered);
+        });
+
+        // 上传按钮
+        document.getElementById('uploadBtn').addEventListener('click', function() {
+            alert('上传新文档功能');
+        });
+
+        // 分页功能
+        document.querySelectorAll('.page-btn[data-page]').forEach(btn => {
+            btn.addEventListener('click', function() {
+                document.querySelectorAll('.page-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                // 这里可以添加实际的分页逻辑
+            });
+        });
+
+        // 跳页功能
+        document.getElementById('pageInput').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const page = parseInt(this.value);
+                if (page >= 1 && page <= 2) {
+                    alert(`跳转到第 ${page} 页`);
+                }
+            }
+        });
+
+        // 初始化渲染
+        renderDocuments(documents);
+    </script>
+</body>
 </html>

@@ -1,9 +1,10 @@
 {
-  "name": "ai-prototype",
+  "name": "knowledge-management-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "知识管理系统 - 资料整理前端界面",
+  "main": "index.html",
   "scripts": {
+    "start": "npx serve .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
