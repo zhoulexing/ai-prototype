@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>渠道报表管理 - 产品原型</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="sidebar">
+        <div class="logo">
+          <div class="logo-icon">数</div>
+          <div>
+            <div class="logo-title">主数据服务平台</div>
+            <div class="logo-subtitle">MASTER DATA</div>
+          </div>
+        </div>
+        <nav class="menu">
+          <div class="menu-group">
+            <div class="menu-group-title">总览</div>
+            <a href="#" class="menu-item active">
+              <span class="dot"></span>
+              渠道报表
+            </a>
+            <a href="#" class="menu-item">
+              <span class="dot"></span>
+              渠道资源
+            </a>
+            <a href="#" class="menu-item">
+              <span class="dot"></span>
+              渠道配置
+            </a>
+          </div>
+          <div class="menu-group">
+            <div class="menu-group-title">其他模块</div>
+            <a href="#" class="menu-item">
+              <span class="dot"></span>
+              数据源管理
+            </a>
+            <a href="#" class="menu-item">
+              <span class="dot"></span>
+              任务调度
+            </a>
+            <a href="#" class="menu-item">
+              <span class="dot"></span>
+              系统配置
+            </a>
+          </div>
+        </nav>
+      </aside>
+      <main class="content">
+        <header class="content-header">
+          <div>
+            <h1 class="page-title">渠道报表管理</h1>
+            <p class="page-desc">可以在这里查看所有渠道报表，维护报表状态以及查看数据。</p>
+          </div>
+          <button class="primary-btn">+ 创建报表</button>
+        </header>
+
+        <section class="card">
+          <div class="card-header">
+            <h2 class="card-title">报表列表</h2>
+            <div class="card-actions">
+              <input type="text" class="search" placeholder="搜索报表" />
+              <button class="secondary-btn">筛选</button>
+            </div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>报表名称</th>
+                <th>状态</th>
+                <th>数据量</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="title">手机渠道数据报表</span>
+                  <span class="tag">每日</span>
+                </td>
+                <td><span class="status status-online">在线</span></td>
+                <td>37</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">平安保险渠道数据-城市级别</span>
+                  <span class="tag">实时</span>
+                </td>
+                <td><span class="status status-online">在线</span></td>
+                <td>29</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">国寿渠道数据报表</span>
+                  <span class="tag">周报</span>
+                </td>
+                <td><span class="status status-maintain">维护</span></td>
+                <td>24</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">在线中介渠道数据（沪深）</span>
+                  <span class="tag">月度</span>
+                </td>
+                <td><span class="status status-online">在线</span></td>
+                <td>18</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">飞行保险渠道数据报表</span>
+                  <span class="tag">实时</span>
+                </td>
+                <td><span class="status status-offline">暂停</span></td>
+                <td>12</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">下沉渠道报表</span>
+                  <span class="tag">每日</span>
+                </td>
+                <td><span class="status status-online">在线</span></td>
+                <td>9</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">下沉渠道报表-地区差异</span>
+                  <span class="tag">实时</span>
+                </td>
+                <td><span class="status status-maintain">维护</span></td>
+                <td>6</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">下沉渠道报表-运营分析</span>
+                  <span class="tag">月度</span>
+                </td>
+                <td><span class="status status-online">在线</span></td>
+                <td>5</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">渠道成本数据报表</span>
+                  <span class="tag">季度</span>
+                </td>
+                <td><span class="status status-maintain">维护</span></td>
+                <td>3</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="title">渠道拉新效率报表</span>
+                  <span class="tag">实时</span>
+                </td>
+                <td><span class="status status-offline">暂停</span></td>
+                <td>1</td>
+                <td class="actions">
+                  <button class="link">查看</button>
+                  <button class="link">编辑</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="pagination">
+            <span class="pagination-info">共 128 条数据</span>
+            <div class="pagination-controls">
+              <button class="page-btn" disabled>上一页</button>
+              <button class="page-btn active">1</button>
+              <button class="page-btn">2</button>
+              <button class="page-btn">3</button>
+              <span class="ellipsis">...</span>
+              <button class="page-btn">12</button>
+              <button class="page-btn">下一页</button>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
